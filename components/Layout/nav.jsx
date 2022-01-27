@@ -5,6 +5,10 @@ import Draggable from "react-draggable";
 const Sidebar = ({ babar }) => {
   const GCC = [
     {
+      name: "Main Page",
+      link: "/",
+    },
+    {
       name: "What is biogeo chemical cycle",
       link: "/wbch",
     },
@@ -16,6 +20,7 @@ const Sidebar = ({ babar }) => {
     { name: "carbon cycle", link: "/crbc" },
     { name: "oxygen cycle", link: "/ocyc" },
     { name: "nitrogen cycle", link: "/nitc" },
+    { name: "Credits", link: "/cred" },
   ];
   return (
     <div
@@ -25,12 +30,12 @@ const Sidebar = ({ babar }) => {
       }
     >
       <Link href="/">
-        <a className="text-white flex pt-4 pl-4 font-bold">Better Dev</a>
+        <a className="text-white text-2xl flex pt-4 pl-4 font-bold">Home</a>
       </Link>
       <div className="my-auto">
         <nav>
           {GCC.map((det) => (
-            <Link key='`' href={det.link}>
+            <Link key="`" href={det.link}>
               <a className="block py-2.5 px-6 rounded uppercase transition duration-200 focus:bg-stone-700 focus:text-white">
                 {det.name}
               </a>
