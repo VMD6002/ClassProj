@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import OgImg from "../public/Image.png"
 
 export default function Home() {
   const Projs = [
@@ -34,6 +35,9 @@ export default function Home() {
     <>
       <Head>
         <title>Bio Geo Chemical Cycle</title>
+        <meta property="og:title" content="Bio Geo Chemical Cycle" key="otitle" />
+        <meta property="og:type" content="Project" key="otype" />
+        <meta property="og:image" content={OgImg} key="oimage" />
       </Head>
       <button className="text-3xl w-full focus:mb-9 duration-200 focus:pt-11 py-7 bg-stone-300 focus:scale-150"><h1 className="text-center rounded-b-xl">Bio Geo Chemial Cyle</h1></button>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 pb-10 grid-cols-1 space-y-10">
