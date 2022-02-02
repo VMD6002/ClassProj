@@ -1,19 +1,20 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Page2() {
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex bg-[#FAF6E9]">
       <Head>
         <title>Oxygen Cycle page 2</title>
       </Head>
-      <div className="m-auto py-9 h-full rounded-lg  w-full mx-7">
-        <h1 className="text-3xl rounded-t-lg text-white text-center py-3 bg-zinc-600">{`(what to add here ?)`}</h1>
-        <div className="grid h-full lg:grid-cols-3 grid-cols-1 bg-stone-700">
-          <div className="w-full h-full flex flex-col rounded-t-lg lg:rounded-l-lg bg-indigo-300">
-            <h2 className="px-5 text-center bg-[#4176cc] w-full lg:rounded-tl-md py-2 text-xl">
+      <div className="m-auto py-9 overflow-hidden rounded-xl w-full mx-7">
+        <h1 className="text-3xl text-white text-center py-3 bg-[#494949]">{`(what to add here ?)`}</h1>
+        <div className="grid h-full lg:grid-cols-3 grid-cols-1 bg-[#ECE8D9]">
+          <div className="w-full h-full flex flex-col">
+            <h2 className="px-5 text-center bg-gray-300 w-full py-2 text-xl">
               Atmosphere
             </h2>
-            <div className="m-auto lg:py-16">
+            <div className="m-auto lg:py-16 py-5">
               <p className="text-lg px-5">
                 Photolysis is the process by which oxygen is released in the
                 atmosphere. In the process, high-energy sunlight breaks apart
@@ -30,11 +31,11 @@ export default function Page2() {
               </p>
             </div>
           </div>
-          <div className="w-full flex flex-col bg-[#a2f5a9]">
-            <h2 className="px-5 text-center bg-[#3e463b] text-white w-full py-2 text-xl">
+          <div className="w-full flex flex-col bg-[#cfccbe]">
+            <h2 className="px-5 text-center bg-slate-400 text-white w-full py-2 text-xl">
               Biosphere
             </h2>
-            <div className="m-auto">
+            <div className="m-auto py-5">
               <p className="text-lg px-5">
                 In the biosphere, the main processes in the oxygen cycle are
                 respiration and photosynthesis. During respiration animals and
@@ -46,12 +47,20 @@ export default function Page2() {
                 plants and plankton
               </p>
             </div>
+            <div className="mx-auto space-x-4 pb-3 invisible lg:visible">
+              <Link href="/ocyc">
+                <a className="font-bold pt-4 text-[#3e4866]">🡠 Previous Page</a>
+              </Link>
+              <Link href="/ocyc/3">
+                <a className="font-bold pt-4 text-[#3e4866]">Next Page 🡢</a>
+              </Link>
+            </div>
           </div>
-          <div className="w-full flex flex-col rounded-b-lg lg:rounded-r-lg bg-orange-500">
-            <h2 className="px-5 text-center bg-orange-900 text-white w-full lg:rounded-tr-md py-2 text-xl">
+          <div className="w-full flex flex-col bg-[#b4b1a5]">
+            <h2 className="px-5 text-center bg-zinc-500 text-white w-full py-2 text-xl">
               Lithosphere
             </h2>
-            <div className="m-auto">
+            <div className="m-auto py-5">
               <p className="text-lg px-5">
                 In the lithosphere, oxygen is fixed and trapped in minerals such
                 as silicates and oxides. This is the natural process of
@@ -64,6 +73,14 @@ export default function Page2() {
                 reaction occurs that wears it down and in the process produces
                 free oxygen.
               </p>
+            </div>
+            <div className="mx-auto space-x-4 pb-3 lg:hidden">
+              <Link href="/ocyc">
+                <a className="font-bold pt-4 text-[#3e4866]">🡠 Previous Page</a>
+              </Link>
+              <Link href="/ocyc/3">
+                <a className="font-bold pt-4 text-[#3e4866]">Next Page 🡢</a>
+              </Link>
             </div>
           </div>
         </div>

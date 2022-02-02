@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Crcb() {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen py-4">
       <Head>
         <title>Carbon Cycle</title>
       </Head>

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useState } from "react";
-import Draggable from "react-draggable";
 
 const Sidebar = ({ babar }) => {
   const GCC = [
@@ -20,6 +19,7 @@ const Sidebar = ({ babar }) => {
     { name: "carbon cycle", link: "/crbc" },
     { name: "oxygen cycle", link: "/ocyc" },
     { name: "nitrogen cycle", link: "/nitc" },
+    // { name: "hydrogen cycle", link: "/hycyc" },
     { name: "Credits", link: "/cred" },
   ];
   return (
@@ -58,21 +58,10 @@ export default function Nav() {
               Better Dev
             </a>
           </Link> */}
-          <button className="relative p-4 my-auto lg:mb-10 lg:mr-10 focus:outline-none bg-black rounded-full focus:bg-gray-700">
-            <svg
-              className="h-5 w-5"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+          <button className="relative duration-200 p-4 my-auto bg-slate-900 overflow-hidden mr-3 space-y-[5px] rounded-full ">
+            <div className={"h-[2px] w-4 rounded-lg bg-white duration-150 " + (sidebar ? "rotate-0" : "rotate-45 translate-y-[0.5rem]")}/>
+            <div className={"h-[2px] w-4 rounded-lg bg-white duration-300 my-4 " + (sidebar ? "translate-x-0" : "translate-x-8")}/>
+            <div className={"h-[2px] w-4 rounded-lg bg-white duration-500 " + (sidebar ? "rotate-0" : "-rotate-45 -translate-y-[0.6rem]")}/>
           </button>
         </div>
       </div>

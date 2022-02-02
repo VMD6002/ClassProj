@@ -2,15 +2,16 @@ import Head from "next/head";
 
 export default function Pag1() {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen py-4 bg-[#EAD3CB]">
       <Head>
         <title>Biogeochemical Cycle</title>
       </Head>
-      <div className="flex flex-col m-auto rounded-lg h-[90%] w-11/12 bg-stone-400">
-        <h1 className="text-2xl uppercase text-center py-3 bg-stone-900 rounded-t-lg text-slate-300">
+      <div className="flex flex-col m-auto rounded-lg h-[90%] w-11/12 bg-[#BDC7C9]">
+        <h1 className="text-2xl uppercase text-center py-3 bg-[#845460] rounded-t-lg text-white">
           Biogeochemical Cycle
         </h1>
-        <div className="m-auto py-[5%] w-11/12 text-gray-900">
+        <img className="h-[500px] mx-auto py-[3%]" src="https://www.sciencefacts.net/wp-content/uploads/2021/07/Biochemical-Cycles.jpg" alt="" />
+        <div className="m-auto pb-[3%] w-11/12 text-gray-900">
           <p className="text-lg">
             There are a few types of atoms that can be a part of a plant one
             day, an animal the next day, and then travel downstream as a part of

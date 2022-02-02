@@ -3,15 +3,16 @@ import Head from "next/head";
 export default function Page1() {
   return (
     <div>
-      <div className="flex py-4 min-h-screen">
+      <div className="flex py-4 min-h-screen bg-[#E7E0C9]">
         <Head>
           <title>Water Cycle</title>
         </Head>
-        <div className="flex flex-col m-auto rounded-lg h-[90%] w-11/12 bg-stone-400">
-          <h1 className="text-2xl uppercase text-center py-3 bg-stone-900 rounded-t-lg text-white">
+        <div className="flex flex-col m-auto rounded-lg h-[90%] w-11/12 bg-[#C1CFC0]">
+          <h1 className="text-2xl uppercase text-center py-3 bg-[#6B7AA1] rounded-t-lg text-white">
             Water Cycle
           </h1>
-          <div className="m-auto py-[5%] w-11/12 text-gray-800">
+          <img className="h-[500px] py-[3%] mx-auto py-[3%]" src="https://www.worldatlas.com/r/w1200/upload/b7/e8/4a/transpiration.png" alt="" />
+          <div className="m-auto pb-[3%] w-11/12 text-[#11324D]">
             <p className="text-lg">
               The water cycle, also known as the hydrologic cycle or the
               hydrological cycle, is a biogeochemical cycle that describes the
